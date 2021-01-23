@@ -1,7 +1,11 @@
+import { sum, subtract } from './calculator/calc'
+
 function component () {
   const element = document.createElement('div')
 
-  element.innerHTML = 'Hello World!'
+  const meaningOfLife = subtract(sum(4, 2), -36)
+  const value = `Hello World! The meaning of life if ${meaningOfLife}`
+  element.innerHTML = value
 
   return element
 }
